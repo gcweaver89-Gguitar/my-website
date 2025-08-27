@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="Design.css">
+	<title>Pentatonic Scale Shapes</title>
+</head>
+<body>
+<button onclick="toggleTheme()"><img src="lightbulb.png"></button>
+<script>
+function toggleTheme() {
+    document.body.classList.toggle("dark");
+    if (document.body.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+}
+
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+}
+</script>
+
+	<div id="topnav">
+		<a href="MockUp_Weaver.html">Home</a>
+		<a class="active" href="Pentatonic.html">Pentatonic</a>
+		<a href="Modes.html">Modes</a>
+		<a href="AboutMe.html">About Me</a></div><br><br>
+			<h1>Pentatonic Patterns</h1>
+				<h2>The pentatonic scales are in my opinion the most useful scales to know. This is because it will give  you the formula for how the majority of music theory functions.<br>
+				There are 5 patterns for pentatonic scales, they never change and will repeat once you get past the 12th fret which is the octive of the open string.</p><br><br>
+			<div class="key-buttons">
+				<a href="APentatonic.html"><button>A</button></a>
+				<a href="BPentatonic.html"><button>B</button></a>
+				<a href="CPentatonic.html"><button>C</button></a>
+				<a href="DPentatonic.html"><button>D</button></a>
+				<a href="EPentatonic.html"><button>E</button></a>
+				<a href="FPentatonic.html"><button>F</button></a>
+				<a href="GPentatonic.html"><button>G</button></a>
+			</div><br><br>
+					<h2>Below are all the patterns for the pentatonic scales, the two main important ones are the Major pentatonic scale and the Minor pentatonic scale which will be shown when you select which key you would like.</h2>
+					<p>To illustrate each pattern, I will show them all starting on the 5th fret on the lowest string which is A in standard 6 string guitar tuning (E A D G B E).</p><br><br>
+						<h3>Pentatonic Pattern 1 (Minor)</h3>
+						<img src="AMinorPentatonic.png" alt="A Minor Pentatonic Pattern"><br>
+						<h3>Pentatonic Pattern 2 (Major)</h3>
+						<img src="AMajorPentatonic.png" alt="A Major Pentatonic Pattern"><br>
+						<h3>Pentatonic Pattern 3</h3>
+						<img src="PentaPattern3.png" alt="3rd Pentatonic Pattern"><br>
+						<h3>Pentatonic Pattern 4</h3>
+						<img src="PentaPattern4.png" alt="4th Pentatonic Pattern"><br>
+						<h3>Pentatonic Pattern 5</h3>
+						<img src="PentaPattern5.png" alt="5th Pentatonic Pattern"><br>
+				
+</body>
+</html>

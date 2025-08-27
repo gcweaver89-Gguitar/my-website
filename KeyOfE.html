@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="Design.css">
+	<title>Key of E</title>
+</head>
+<body>
+<button onclick="toggleTheme()"><img src="lightbulb.png"></button>
+<script>
+function toggleTheme() {
+    document.body.classList.toggle("dark");
+    if (document.body.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+}
+
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+}
+</script>
+	<div id="topnav">
+		<a href="MockUp_Weaver.html">Home</a>
+		<a href="Pentatonic.html">Pentatonic</a>
+		<a href="Modes.html">Modes</a>
+		<a href="AboutMe.html">About Me</a></div><br><br>
+		<div id="navigation">
+		<a href="MockUp_Weaver.html"><button>Back</button></a></div>
+			<h1>Key of E</h1>
+				<h2>What are the notes in the key of E?</h2>
+					<h3>E Major (E)</h3><br>
+					<p>E F# G# A B C# D#</p><br><br>
+					<h3>E Minor (Em)</h3><br>
+					<p>E F# G A B C D</p><br><br>
+					<p>The "#" symbol represents a sharp note which means it's a half-step (one fret) higher than the natural note</p>
+							<p>You may come across a "b" symbol, this means that the note is a half step Lower than the natural note. You may come across a "b" symbol, this means that the note is a half setp lower than the natural note and will generally be used if you are descending a scale. 
+							There are only two sets of notes that will not have a sharp or flat in between them and they are E,F and B,C.</p><br>
+					
+</body>
+</html>

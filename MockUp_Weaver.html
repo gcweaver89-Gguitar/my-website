@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="Design.css">
+	<Title>Beginners Guide to Improvisation</title>
+</head>
+<body>
+<button onclick="toggleTheme()"><img src="lightbulb.png"></button>
+<script>
+function toggleTheme() {
+    document.body.classList.toggle("dark");
+    
+    if (document.body.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+}
+
+
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+}
+</script>
+	<div id="topnav">
+		<a class="active" href="MockUp_Weaver.html">Home</a>
+		<a href="Pentatonic.html">Pentatonic</a>
+		<a href="Modes.html">Modes</a>
+		<a href="AboutMe.html">About Me</a></div><br><br> <!--Make sure to close div elements-->
+	<h1>Beginners Guide to Improvisation</h1>
+		<h2>Choose your key</h2>
+			<p>Choosing the key to improvise over is a matter of preference, you will soon learn that whichever key you choose is merely the starting note (root).
+			If you are just starting out, the "easiest" to grasp is the key of A.</p><br>
+			<p>Once you choose which key you want I will show you the notes for both the Major and Minor variants.This distinction will be more important once we learn about Scales and Modes.</p><br><br>
+				<div class="key-buttons">
+    <a href="KeyOfA.html"><button>A</button></a>
+    <a href="KeyOfB.html"><button>B</button></a>
+    <a href="KeyOfC.html"><button>C</button></a>
+    <a href="KeyOfD.html"><button>D</button></a>
+    <a href="KeyOfE.html"><button>E</button></a>
+    <a href="KeyOfF.html"><button>F</button></a>
+    <a href="KeyOfG.html"><button>G</button></a>
+</div><br><br>
+	<h2>Note: all of the examples for pentatonic patterns and modes are based on standard six string E tuning (E A D G B E)</h2>
+
+	
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="Design.css">
+	<title>B pentatonic Patterns</title>
+</head>
+<body>
+<button onclick="toggleTheme()"><img src="lightbulb.png"></button>
+<script>
+function toggleTheme() {
+    document.body.classList.toggle("dark");
+    if (document.body.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+}
+
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+}
+</script>
+	<div id="topnav">
+		<a href="MockUp_Weaver.html">Home</a>
+		<a href="Pentatonic.html">Pentatonic</a>
+		<a href="Modes.html">Modes</a>
+		<a href="AboutMe.html">About Me</a></div><br><br>
+	<div id="navigation">
+		<a href="Pentatonic.html"><button>Back</button></a></div>
+			<h1>Pentatonic Patterns starting in the key of B</h1>
+				</h2>The following patterns will start from pattern 1 (Minor) all the way to pattern 5 in order on the fretboard. You will notice that where the pattern ends on the lowest string (E String), the new pattern will start.</h2>
+					<h3>Pattern 1 (Minor)</h3>
+					<img src="BPentaPattern1.png" alt="B Minor Pentatonic">
+					<h3>Pattern 2 (D Major)</h3>
+					<img src="BPentaPattern2.png" alt="D Major Pentatonic">
+					<h3>Pattern 3</h3>
+					<img src="BPentaPattern3.png" alt="Bm Pentatonic Pattern 3">
+					<h3>Pattern 4</h3>
+					<img src="BPentaPattern4.png" alt="Bm Pentatonic Pattern 4">
+					<h3>Pattern 5</h3>
+					<img src="BPentaPattern5.png" alt="Bm Pentatonic Pattern 5">
+</body>
+</html>

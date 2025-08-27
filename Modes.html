@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="Design.css">
+	<title>Modes</title>
+</head>
+<body>
+<button onclick="toggleTheme()"><img src="lightbulb.png"></button>
+<script>
+function toggleTheme() {
+    document.body.classList.toggle("dark");
+    if (document.body.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+}
+
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+}
+</script>
+	<div id="topnav">
+		<a href="MockUp_Weaver.html">Home</a>
+		<a href="Pentatonic.html">Pentatonic</a>
+		<a class="active" href="Modes.html">Modes</a>
+		<a href="AboutMe.html">About Me</a></div><br><br>
+			<h1>What are Modes?</h1>
+			<p>Modes are best described as variations of scales. They can be used to convey "feeling" or attitude when writing or improvising, depending on which mode you choose.
+			The most important modes to start with are either the Ionion mode (Major scale) or the Aeolian mode (Minor scale).</p>
+				<h2>How do I know which mode I'm in and should I stay in a mode once I start?</h2>
+				<p>You will know generally by the pattern you will be using and no, you should explore the fretboard utilizing the notes in different modes to convey different feelings or moods</p>
+					<h3>Below are the modes in the correct sequence no matter which one you start with. Just like the pentatonic scales, modes follow patterns but instead
+					of the next scale starting where the one before ends, it will start on the second note of the low E string.</p>
+					<img src="Modes.png" alt="All the important modes for western music">
+					<p>To choose a key, you can either start with Ionian (major) or Aeolian (minor) and that will determine whether it is in a major or minor key and the patterns will continue based on the note (key) you start with using these scales</p>
+					<p>For example, in the above patterns I started in the G major (Ionian) and E minor (Aeolian) modes. G major and E minor are the relative keys to eachother which mean that they will use the same scale patterns.</p> 
+			
+</body>
+</html>

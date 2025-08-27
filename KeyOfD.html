@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="Design.css">
+	<title>Key of D</title>
+</head>
+<body>
+<button onclick="toggleTheme()"><img src="lightbulb.png"></button>
+<script>
+function toggleTheme() {
+    document.body.classList.toggle("dark");
+    if (document.body.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+}
+
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+}
+</script>
+	<div id="topnav">
+		<a href="MockUp_Weaver.html">Home</a>
+		<a href="Pentatonic.html">Pentatonic</a>
+		<a href="Modes.html">Modes</a>
+		<a href="AboutMe.html">About Me</a></div><br><br>
+		<div id="navigation">
+		<a href="MockUp_Weaver.html"><button>Back</button></a></div>
+			<h1>Key of D</h1>
+				<h2>What are the notes in the key of D?</h2>
+					<h3>D Major (D)</h3><br>
+					<p>D E F# G A B C#</p><br><br>
+					<h3>D Minor (Dm)</h3><br>
+					<p>D E F G A Bb C</p>
+					<p>You will notice that for this I put both the flat (b) and sharp (#) variants of the notes. This is to help differentiate the notes but they mean the same thing.</p>
+					
+</body>
+</html>
